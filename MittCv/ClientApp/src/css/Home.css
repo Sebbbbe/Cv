@@ -1,0 +1,205 @@
+p {
+   font-family: Sans-serif ;
+}
+
+html { scroll-behavior: smooth; }
+
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
+
+.flex-child{
+    
+
+     
+     }
+
+    
+
+#img-2{
+   height: 100px;
+ 
+}
+
+.navbar {
+   position: absolute;
+   right: 0px;
+}
+
+.navbar-brand {
+   position:absolute;
+   left: 0px;
+   color: black;
+}
+
+.github-logo {
+   color: black;
+   background: 50px;
+  
+}
+
+
+
+.nav-link {
+   color : green;
+}
+
+.centered  {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.arrow-down{
+   position: absolute;
+   top: 300%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: gray;
+   z-index: 1;
+  
+ 
+  border:  solid lightgreen;
+  border-radius: 50%;
+  
+}
+
+
+.bottom-right {
+   position: absolute;
+   bottom: 8px;
+   right: 16px;
+   size:50px;
+ }
+#img1{
+  width: auto;
+}
+
+h4,h5{
+    
+   text-align: center;
+}
+
+#img-2{
+   width: 100px;
+  display:block;
+  margin : 0 auto;
+   
+}
+
+.margin-10px {
+    margin: 10px 0;
+}
+p{
+   text-align: center;
+   max-width: 80ch;
+}
+
+#img-1{
+ 
+   width: 100%;
+   height: auto;
+  
+
+
+}
+
+.aboutMe,
+.kurser-kvar
+{
+   margin-top:25px;
+}
+
+.kunskaper,
+.Verktyg,
+.kurser
+.margin-50
+{
+margin-top: 50px;
+}
+
+.Verktyg,
+.list-group{
+   margin-bottom: 50px;
+}
+
+.margin-75 {
+margin-top:75px;
+}
+
+.margin-25
+
+ {
+   margin-top: 25px;
+}
+
+.margin-10{
+   margin-top: 10px;
+}
+
+
+
+.card1 {
+   margin-top: 50px;
+}
+
+.links {
+  text-align: center;
+  
+}
+
+
+ .footer{
+    border: 1px solid lightgray;
+    width: auto  ;
+ }
+
+@media screen and (min-width: 768px){
+   .flex-parent{
+      display: flex;
+      flex-wrap: wrap;
+      
+      
+      }
+      .flex-child{
+    
+       width: 50%;
+      
+         
+         }
+      }
+
+@media screen and (min-width: 992px) {
+
+.aboutMe p
+{
+   display:block;
+   margin: 0 auto;
+}
+.kunskaper p,
+.Verktyg p{
+   display:block;
+   margin: 10px auto;
+}
+
+
+   
+.flex-child{
+    
+   width: 33%;
+   display:inline-flex;
+     
+     }
+
+
+#img-2 {
+   margin-bottom: 25px;
+}
+
+
+
+}
+
+
