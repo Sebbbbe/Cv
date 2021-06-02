@@ -6,10 +6,10 @@ import { FiArrowDown } from 'react-icons/fi';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import {AboutMe} from '../components/ReusableCode/AboutMe'
 import { Link } from 'react-router-dom';
-import {TwoStars} from '../components/ReusableCode/stars/TwoStars'
-import { ThreeStars } from './ReusableCode/stars/ThreeStars';
-import { FourStars } from './ReusableCode/stars/FourStars';
-import { FiveStars } from './ReusableCode/stars/FiveStars';
+import {TwoStars} from '../components/ReusableCode/stars/TwoStars';
+import { ThreeStars } from '../components/ReusableCode/stars/ThreeStars';
+import { FourStars } from '../components/ReusableCode/stars/FourStars';
+import { FiveStars } from '../components/ReusableCode/stars/FiveStars';
 
 
 
