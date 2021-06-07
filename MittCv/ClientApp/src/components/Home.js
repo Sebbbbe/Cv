@@ -10,6 +10,8 @@ import {TwoStars} from '../components/ReusableCode/stars/TwoStars'
 import { ThreeStars } from './ReusableCode/stars/ThreeStars';
 import { FourStars } from './ReusableCode/stars/FourStars';
 import { FiveStars } from './ReusableCode/stars/FiveStars';
+import  aboutMeImage from '../Image/pictureOfMe.jpg';
+
 
 
 
@@ -17,9 +19,21 @@ export class Home extends Component {
   static displayName = Home.name;
   constructor(){
     super();
+    this.state = {
+      amountState : 0
+    }
   }
   
  
+  componentDidMount(){
+    fetch('https://api.github.com/users/Sebbbbe/repos')
+    .then(response => response.json())
+    .then(json => {
+      this.setState({
+        amountRepos : json.length
+      })
+    });
+  }
 
   render() {
   
@@ -32,7 +46,8 @@ export class Home extends Component {
       <section className="img-container">
       <h1 class="centered">Sebastian Tiger 
       <br></br>
-      Backend Developer
+      Full-Stack Dev
+      
       <a href="#link-about-me"><FiArrowDown   className="arrow-down " /> </a>
       </h1>
      
@@ -46,7 +61,7 @@ export class Home extends Component {
             
          
           <h4 id="link-about-me" ><AboutMe /></h4>
-          <img id="img-2" src="image/pictureOfMe.jpg" alt="" />
+          <img id="img-2" src={aboutMeImage} alt="" />
           <p className="margin-25">
             Hej, Jag heter Sebastian är  22 år gammal bott i Stockholm hela mitt liv och flyttade till göteborg för att lära mig programmera.
             Jag älskar att lära mig nya tekniker som gör det snabbare , bättre eller enklare.
@@ -217,8 +232,11 @@ export class Home extends Component {
       <a href="https://github.com/Sebbbbe?tab=repositories"  target="_blank" className="github-logo"  >
       <FaGithub size={35}/>
       </a>
+
+      <p >Antal repos i mitt github:  {this.state.amountRepos}</p>
      
       </div>
+
         
 </div>
    

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FiArrowDown } from 'react-icons/fi';
+import  frontImage from '../Image/natureImg3.jpg';
 export class FrontPage extends Component {
   
   constructor(){
@@ -34,7 +35,7 @@ export class FrontPage extends Component {
      </div>
    </nav>
              <div  >
-             <img   src="image/natureImg3.jpg" style={{paddingLeft : "0"}}  alt=""   />
+             <img   src={frontImage} style={{paddingLeft : "0"}}  alt=""   />
              </div> 
             
       </div>
