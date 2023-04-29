@@ -67,6 +67,12 @@ html, body {
   
 }
 
+.links p{
+   display:block;
+   margin: 0 auto;
+
+}
+
 
 .bottom-right {
    position: absolute;

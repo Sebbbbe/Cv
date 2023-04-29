@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FiArrowDown } from 'react-icons/fi';
+import  frontImage from '../Image/natureImg3.jpg';
 export class FrontPage extends Component {
   
   constructor(){
@@ -30,11 +31,17 @@ export class FrontPage extends Component {
          <li class="nav-item">
            <a class="nav-link " href="#link-projekt">Projekt</a>
          </li>
+         <li class="nav-item">
+           <a class="nav-link " href="#link-lia">LIA</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link " href="#link-arbete">Arbete</a>
+         </li>
        </ul>
      </div>
    </nav>
              <div  >
-             <img   src="image/natureImg3.jpg" style={{paddingLeft : "0"}}  alt=""   />
+             <img   src={frontImage} style={{paddingLeft : "0"}}  alt=""   />
              </div> 
             
       </div>
