@@ -31,6 +31,12 @@ export class FrontPage extends Component {
          <li class="nav-item">
            <a class="nav-link " href="#link-projekt">Projekt</a>
          </li>
+         <li class="nav-item">
+           <a class="nav-link " href="#link-lia">LIA</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link " href="#link-arbete">Arbete</a>
+         </li>
        </ul>
      </div>
    </nav>
